@@ -1,0 +1,39 @@
+#mission-container {
+	height: 90%;
+	position: relative;
+	display: flex;
+}
+
+#mission-container #background {
+	height: 100%;
+	width: 100%;
+	background: url('../../assets/IMG-6410.JPG') no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#panel {
+	height: 100%;
+	width: 40em;
+	background: rgba(0,0,0, .5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#mission_content-wrapper {
+	background: white;
+	padding: .75em;
+	width: 65%;
+	word-wrap: normal;
+}
+
+#mission_content-wrapper p {
+	background: rgb(243, 240, 68);
+	color: black;
+	font-size: 1.25em;
+}
