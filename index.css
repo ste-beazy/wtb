@@ -164,7 +164,7 @@ div.feature:hover div {
 }
 
 .yellow {
-	background: gold;
+	background: rgba(255, 240, 179);
 	width: 15em;
 	height: 100%;
 }
