@@ -5,6 +5,7 @@
 body {
 	height: 100vh;
 	overflow-x: hidden;
+	background: rgba(50,50,50,.75);
 }
 
 #root {
@@ -16,7 +17,7 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 	height: 65px;
-	background: rgba(0,0,0, .88);
+	background: rgba(255, 240, 179, .25);
 	align-items: center;
 	top: -2px;
 }
@@ -24,7 +25,7 @@ nav {
 a {
 	padding: 8px 1em;
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-size: 1.5em;
 	font-weight: bolder;
 }
@@ -37,8 +38,8 @@ a div {
 }
 
 a:hover {
-	background: rgb(255, 240, 179);
-	color: black;
+	background: rgba(50,50,50,.85);
+	color: white;
 }
 
 #nav-left,
@@ -53,10 +54,17 @@ a:hover {
 }
 
 #logo-container {
-	height: 45em;
-	background: url('assets/logo.jpg');
-	background-size: 100% 100%;
-	z-index: 10;
+	height: 7em;
+	display: flex;
+	justify-content: center;
+}
+
+#logo {
+	background: url('./assets/WhatsTheBizWithTJ_Logo_transparent.png');
+	height: 100%;
+	width: 9rem;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 #about-preview__container {
@@ -72,12 +80,14 @@ a:hover {
 }
 
 #about-preview {
-	height: 35em;
+	height: 45em;
 	background: green;
 	top: 10em;
-	width: 75%;
+	width: 100%;
 	z-index: 1;
 	margin-bottom: 10%;
+	border-radius: 50%;
+	margin-left: -27rem;
 }
 
 #about__background {
@@ -88,6 +98,19 @@ a:hover {
 	top: 0;
 	display: flex;
 	left: 25%;
+}
+
+#about__feature {
+	height: 30em;
+	width: 25em;
+	background: url('./assets/juanita.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 35px;
+	right: 0;
+
 }
 
 #features-preview__container {
@@ -110,15 +133,40 @@ a:hover {
 
 .feature {
 	flex: 1;
-	background: orange;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.feature:nth-child(even) {
-	background: green;
+#home-feature__one {
+	background: url('./assets/tr3umphant-designs.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home-feature__two {
+	background: url('./assets/bee.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home-feature__three {
+	background: url('./assets/ashley.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home-feature__four {
+	background: url('./assets/juanita.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home-feature__five {
+	background: url('./assets/tayo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .feature p,
@@ -189,16 +237,24 @@ main {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	top: 25px;
+	top: 60px;
 	display: flex;
 	align-items: flex-end;
 }
 
 .dot {
-	height: 15px;
+	height: 55px;
 	width: 25px;
-	border-radius: 50%;
+	border-radius: 15px;
 	background: black;
+}
+
+.section-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: black;
+	z-index: 1;
 }
 
 .animation-one {
@@ -243,6 +299,11 @@ main {
 .animation-nine {
 	animation: moveup 10s linear infinite;
 	animation-delay: 8s;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
 }
 
 @keyframes moveup {
