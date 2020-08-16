@@ -73,7 +73,6 @@ a:hover {
 
 #video-container {
 	height: 85em;
-	background: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -115,7 +114,6 @@ a:hover {
 
 #features-preview__container {
 	height: 105em;
-	background: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -185,7 +183,6 @@ div.feature:hover div {
 
 #video-wrapper {
 	height: 35em;
-	background: rgba(0,0,0, .88);
 	width: 85%;
 	display: flex;
 	justify-content: center;
@@ -197,9 +194,7 @@ div.feature:hover div {
 #video {
 	height: 85%;
 	width: 90%;
-	border: white;
 	background: rgba(253, 181, 14, 0.25);
-	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -237,16 +232,46 @@ main {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	top: 60px;
-	display: flex;
-	align-items: flex-end;
+	top: 0;
+	left: 0;
 }
 
 .dot {
 	height: 55px;
 	width: 25px;
 	border-radius: 15px;
-	background: black;
+	background: rgb(255,240,179);
+	position: absolute;
+}
+
+.dot-one {
+	top: 15em;
+	left: 20em;
+}
+
+.dot-two {
+	top: 6em;
+	right: 15em;
+}
+
+.dot-three {
+	bottom: 15em;
+	left: 5em;
+}
+
+.dot-four {
+	bottom: 25em;
+	left: 20em;
+}
+
+.dot-five {
+	bottom: 35em;
+	right: 7em;
+}
+
+.dot-six {
+	bottom: 5em;
+	right: 10em;
 }
 
 .section-link {
@@ -257,48 +282,8 @@ main {
 	z-index: 1;
 }
 
-.animation-one {
-	animation: moveup 10s linear infinite;
-}
-
-.animation-two {
-	animation: moveup 10s linear infinite;
-	animation-delay: 1s;
-}
-
-.animation-three {
-	animation: moveup 10s linear infinite;
-	animation-delay: 2s;
-}
-
-.animation-four {
-	animation: moveup 10s linear infinite;
-	animation-delay: 3s;
-}
-
-.animation-five {
-	animation: moveup 10s linear infinite;
-	animation-delay: 4s;
-}
-
-.animation-six {
-	animation: moveup 10s linear infinite;
-	animation-delay: 5s;
-}
-
-.animation-seven {
-	animation: moveup 10s linear infinite;
-	animation-delay: 6s;
-}
-
-.animation-eight {
-	animation: moveup 10s linear infinite;
-	animation-delay: 7s;
-}
-
-.animation-nine {
-	animation: moveup 10s linear infinite;
-	animation-delay: 8s;
+.animation-grow {
+	animation: grow 3.5s linear infinite;
 }
 
 iframe {
@@ -306,25 +291,11 @@ iframe {
 	width: 100%;
 }
 
-@keyframes moveup {
-	0% {
-		transform: translateY(0);
-		opacity: 0;
-	}
-	10% {
-		opacity: 1;
-	}
-	36% {
-		transform: translateX(-5px);
-	}
-	37% {
-		transform: translateX(5px);
-	}
-	90% {
-		opacity: 1;
+@keyframes grow {
+	50% {
+		transform: scale(2)
 	}
 	100% {
-		transform: translateY(-105em);
-		opacity: 0;
+		transform: scale(1);
 	}
 }
