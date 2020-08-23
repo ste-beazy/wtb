@@ -18,8 +18,6 @@
 
 	function close() {
 		const menu = document.getElementById('mobile-nav')
-		menu.style.opacity = '0'
-		menu.style.transition = 'opacity .75s ease'
 		menu.style.display = 'none'
 	}
 
@@ -28,11 +26,9 @@
 		style.display = 'flex'
 		style.flexDirection = 'column'
 		style.alignItems = 'center'
-		style.opacity = '1'
-		style.transition = 'opacity .75s ease'
 		style.position = 'fixed'
 		style.top = '7em'
 		style.width = '100%'
-		style.height = '40%'
+		style.height = '45%'
 	}
 })()
