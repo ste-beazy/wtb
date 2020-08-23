@@ -77,14 +77,14 @@
 		if (running) return
 		running = true
 		document.addEventListener('click', (e) => {
-			if (e.target.classList.value.indexOf('video__preview') <= 0) return 
-			console.log({ target: e.target })
+			if (e.target.classList.value.indexOf('video__preview') < 0) return
+
 			const { style } = defaultDisplay
 			const [ featuredVideo ] = document.getElementsByClassName('featured-video')
 			if (style.display !== 'none') {
 				style.display = 'none'
 			}
-			const hasClassName = e.target.classList.value.indexOf('featured-video') >= 0
+			const [, hasClassName] = e.target.classList.value.split(' ')
 			if (hasClassName) return
 
 			if (featuredVideo) {
