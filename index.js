@@ -1,11 +1,9 @@
 (function() {
 	const root = document.getElementsByTagName('body')[0]
 	document.addEventListener('click', (e) => {
-		console.log({ inIt: e.target.classList.value.indexOf('video__preview') })
-		if (e.target.classList.value.indexOf('video__preview') >= 0) return
-		console.log(root.clientWidth > 900, e.target.id)
 		if (root.clientWidth > 900) return
 		if (e.target.id !== 'logo') return
+	
 		const isOpen = e.target.classList.value.indexOf('active') >= 0
 		if (isOpen) {
 			close()
