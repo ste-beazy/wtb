@@ -26,7 +26,7 @@ a {
 	padding: 8px 1em;
 	text-decoration: none;
 	color: black;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	font-weight: bolder;
 }
 
@@ -49,6 +49,10 @@ a:hover {
 	justify-content: space-evenly;
 }
 
+.navigation-link {
+	font-family: 'Lobster', cursive;
+}
+
 #nav-right {
 	justify-content: flex-end;
 }
@@ -69,6 +73,7 @@ a:hover {
 
 #about-preview__container {
 	height: 150em;
+	border-bottom: 3px solid black;
 }
 
 #video-container {
@@ -80,13 +85,21 @@ a:hover {
 
 #about-preview {
 	height: 45em;
-	background: green;
+	background: rgb(255,240,179);
 	top: 10em;
-	width: 100%;
+	width: 55em;
 	z-index: 1;
 	margin-bottom: 10%;
 	border-radius: 50%;
 	margin-left: -27rem;
+	color: black;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#about-blurb__wrapper {
+	width: 50%;
 }
 
 #about__background {
@@ -96,7 +109,7 @@ a:hover {
 	width: 100%;
 	top: 0;
 	display: flex;
-	left: 25%;
+	right: 5em;
 }
 
 #about__feature {
@@ -117,6 +130,7 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 3px solid black;
 }
 
 #features-preview {
@@ -135,6 +149,7 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 #home-feature__one {
@@ -172,8 +187,9 @@ a:hover {
 	visibility: hidden;
 }
 
-div.feature:hover {
+div.selected-feature {
 	flex: 6;
+	transition: flex-grow .5s ease;
 }
 
 div.feature:hover p,
@@ -221,6 +237,21 @@ div.feature:hover div {
 section,
 main {
  position: relative;
+}
+
+.section-link {
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+	animation: moveleft 2.5s infinite;
+}
+
+@keyframes moveleft {
+	50% {
+		margin-right: 2em;
+	}
+	100% {
+		margin-right: 0;
+	}
 }
 
 .sticky {

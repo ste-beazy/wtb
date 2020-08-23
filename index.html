@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="./index.css">
 	<title>What's the Biz - Home</title>
@@ -14,6 +15,7 @@
 			</div>
 		</section>
 		<nav id='navigation-wrapper' class='sticky'>
+			<div id='mobile-naviation__hamburger'></div>
 			<aside id='nav-left'>
 				<a class='navigation-link' href='./pages/about/index.html'>About</a>
 				<a class='navigation-link' href='./pages/mission/index.html'>Mission</a>
@@ -27,7 +29,9 @@
 		</nav>
 		<section id='about-preview__container'>
 			<div id='about-preview' class='sticky'>
-				<h1>About</h1>
+				<div id='about-blurb__wrapper'>
+					<p>Hosted and created by TJ Cartwright, What’s the Biz is an energetic web series that highlights the stories of black business owners through storytelling!</p>
+				</div>
 			</div>
 			<div id='about__background'>
 				<div class='black'></div>
@@ -106,5 +110,21 @@
 		<div id='footer'>
 		</div>
 	</footer>
+	<script>
+		const features = document.getElementsByClassName('feature')
+		for (let i = 0; i < features.length; i++) {
+			const feature = features[i]
+			feature.addEventListener('mousedown', (e) => {
+				console.log('in click', e)
+				const [ previousFeature ] = document.getElementsByClassName('selected-feature')
+				if (previousFeature) {
+					if (previousFeature.id === e.target.id) return
+					previousFeature.classList.remove('selected-feature')
+				}
+				feature.classList.add('selected-feature')
+			})
+	
+		}
+	</script>
 </body>
 </html>
