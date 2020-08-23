@@ -6,6 +6,12 @@
 	background-position: center;
 }
 
+#press__mentions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
 #press_billboard-logo {
 	height: 100%;
 	width: 100%;
@@ -28,5 +34,5 @@
 	background-size: contain;
 	background-position: center;
 	height: 10em;
-	width: 20em;
+	width: 15em;
 }
