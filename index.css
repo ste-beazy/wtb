@@ -5,7 +5,7 @@
 body {
 	height: 100vh;
 	overflow-x: hidden;
-	background: rgba(50,50,50,.75);
+	background: white;
 }
 
 #root {
@@ -17,7 +17,7 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 	height: 65px;
-	background: rgba(255, 240, 179, .25);
+	background: rgba(255, 240, 179);
 	align-items: center;
 	top: -2px;
 }
@@ -38,8 +38,8 @@ a div {
 }
 
 a:hover {
-	background: rgba(50,50,50,.85);
-	color: white;
+	background: rgba(255,255,255,.85);
+	text-decoration: none;
 }
 
 #nav-left,
