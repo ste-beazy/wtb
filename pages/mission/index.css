@@ -28,13 +28,23 @@
 
 #mission_content-wrapper {
 	background: white;
-	padding: .75em;
+	padding: 1.75em;
 	width: 65%;
 	word-wrap: normal;
+	border-radius: 12px;
 }
 
 #mission_content-wrapper p {
 	background: rgb(243, 240, 68);
 	color: black;
 	font-size: 1.25em;
+	padding: 1em;
+	text-align: justify;
+	font-weight: bolder;
+}
+
+@media (max-width: 900px) {
+ #panel {
+	 width: 100%;
+ }
 }
