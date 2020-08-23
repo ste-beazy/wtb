@@ -18,6 +18,9 @@
 	word-wrap: normal;
 	font-size: 1.75em;
 	background: rgb(255,240,179);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #contact-blurb a {
@@ -44,4 +47,29 @@
 	height: 2.5em;
 	width: 2.5em;
 	filter: grayscale();
+}
+
+@media (max-width: 600px) {
+	#contact-blurb,
+	#contact-blurb a {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#contact-blurb {
+		height: 35%;
+		justify-content: center;
+		border-radius: 13px 13px;
+	}
+
+	#contact-blurb,
+	#contact-blurb a {
+		font-size: 1.25em;
+	}
+
+	#contact-blurb a {
+		color: blue;
+		text-decoration: underline;
+	}
 }

@@ -48,3 +48,9 @@
 	 width: 100%;
  }
 }
+
+@media (max-device-width: 600px) {
+	#mission_content-wrapper {
+		width: 95%;
+	}
+}
