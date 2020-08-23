@@ -77,7 +77,7 @@
 		if (running) return
 		running = true
 		document.addEventListener('click', (e) => {
-			if (e.target.id === 'logo') return 
+			if (e.target.classList.value.indexOf('video__preview') <= 0) return 
 			console.log({ target: e.target })
 			const { style } = defaultDisplay
 			const [ featuredVideo ] = document.getElementsByClassName('featured-video')

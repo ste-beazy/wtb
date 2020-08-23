@@ -29,6 +29,10 @@
 	background: url('../../assets/logo/kultaheredmedia.png');
 }
 
+.press-logo__dayton-daily-news {
+	background: url('../../assets/logo/ddn.jpeg')
+}
+
 .press-logo {
 	background-repeat: no-repeat;
 	background-size: contain;
