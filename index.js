@@ -1,20 +1,19 @@
 (function() {
-	const desktopMenu = document.getElementById('navigation-wrapper')
-	if (!desktopMenu) {
-		document.addEventListener('click', (e) => {
-			e.stopPropagation()
-			if (e.target.id !== 'logo') return
-			const isOpen = e.target.classList.value.indexOf('active') >= 0
-			console.log({ isOpen })
-			if (isOpen) {
-				close()
-				e.target.classList -= ' active'
-			} else {
-				e.target.classList += ' active'
-				open()
-			}
-		})
-	}
+	const root = document.getElementsByTagName('body')[0]
+	console.log({ width: root.clientWidth })
+	document.addEventListener('click', (e) => {
+		console.log(root.clientWidth > 900, e.target.id)
+		if (root.clientWidth > 900) return
+		if (e.target.id !== 'logo') return
+		const isOpen = e.target.classList.value.indexOf('active') >= 0
+		if (isOpen) {
+			close()
+			e.target.classList -= ' active'
+		} else {
+			e.target.classList += ' active'
+			open()
+		}
+	})
 
 	function close() {
 		const menu = document.getElementById('mobile-nav')
@@ -29,6 +28,6 @@
 		style.position = 'fixed'
 		style.top = '7em'
 		style.width = '100%'
-		style.height = '45%'
+		style.height = '25em'
 	}
 })()
