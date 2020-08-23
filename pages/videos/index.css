@@ -1,3 +1,63 @@
 #videos-page__container {
-	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.video__season {
+	height: 10em;
+	display: flex;
+	width: 85%;
+	padding: 1em;
+	width: 90%;
+}
+
+#billboard {
+	height: 40em;
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	width: 100%;
+}
+
+#featured-video__default {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	background: orange;
+}
+
+#video__seasons {
+	width: 80%;
+	height: 35em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#videos__season-2 {
+	background: hotpink;
+}
+
+#videos__season-1 {
+	background: turquoise;
+	padding: 1em;
+	width: 90%;
+}
+
+.video__preview {
+	flex: 1;
+	height: 100%;
+	border: 1px solid black;
+	background: lightgreen;
+}
+
+.video__preview span {
+	font-size: 1.25em;
+}
+
+.featured-video {
+	flex: 2;
 }
