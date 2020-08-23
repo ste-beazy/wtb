@@ -105,6 +105,7 @@
 			text.innerHTML = season.toUpperCase() + ' Ep. ' + episode + ': ' + video.title
 			frame.style.padding = '0 2em'
 			frame.appendChild(iframe)
+			window.scrollTo(0, 0)
 		})
 	}
 })()
