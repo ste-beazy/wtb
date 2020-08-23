@@ -37,6 +37,10 @@ a div {
 	width: 55px;
 }
 
+.navigation-link {
+	font-weight: bolder;
+}
+
 .navigation-link:hover {
 	background: rgba(255,255,255,.85);
 	text-decoration: none;
@@ -45,17 +49,13 @@ a div {
 
 #nav-left,
 #nav-right {
-	width: 33%;
+	width: 45%;
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .navigation-link {
 	font-family: 'Lobster', cursive;
-}
-
-#nav-right {
-	justify-content: flex-end;
 }
 
 #logo-container {
