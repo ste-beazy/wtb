@@ -1,3 +1,7 @@
+body {
+	height: 100vh;
+}
+
 #contact-page__container {
 	flex: 1;
 	display: flex;

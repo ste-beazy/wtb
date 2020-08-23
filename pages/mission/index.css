@@ -1,3 +1,7 @@
+body {
+	height: 100vh;
+}
+
 #mission-container {
 	flex: 1;
 	width: 100%;
@@ -52,5 +56,9 @@
 @media (max-device-width: 600px) {
 	#mission_content-wrapper {
 		width: 95%;
+	}
+
+	#mission-container #background {
+		background-position: left;
 	}
 }
