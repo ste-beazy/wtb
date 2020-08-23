@@ -6,16 +6,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="./index.css">
+	<script src='./index.js'></script>
 	<title>What's the Biz - Home</title>
 </head>
 <body>
 	<main id='root'>
 		<section id='logo-container'>
-			<div id='logo'>
-			</div>
+			<div id='logo'></div>
 		</section>
+		<nav id='mobile-nav'>
+			<a class='navigation-link' href='./pages/about/index.html'>About</a>
+			<a class='navigation-link' href='./pages/mission/index.html'>Mission</a>
+			<a class='navigation-link' href='./pages/videos/index.html'>Videos</a>
+			<a class='navigation-link' href='./pages/blog/index.html'>Blog</a>
+			<a class='navigation-link' href='./pages/press/index.html'>Press</a>
+			<a class='navigation-link' href='./pages/contact/index.html'>Contact</a>	
+		</nav>
 		<nav id='navigation-wrapper' class='sticky'>
-			<div id='mobile-naviation__hamburger'></div>
 			<aside id='nav-left'>
 				<a class='navigation-link' href='./pages/about/index.html'>About</a>
 				<a class='navigation-link' href='./pages/mission/index.html'>Mission</a>
@@ -103,7 +110,11 @@
 		</section>
 		<section id='video-container'>
 			<div id='video-wrapper' class='sticky'>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/z6sHhV_W0Ww?html5=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			</div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/z6sHhV_W0Ww?html5=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<a id='video__section-link' class='section-link' href='./pages/videos/index.html'>
+				<span>Videos ></span>
+			</a>
 		</section>
 	</main>
 	<footer id='footer-wrapper'>
@@ -115,7 +126,6 @@
 		for (let i = 0; i < features.length; i++) {
 			const feature = features[i]
 			feature.addEventListener('mousedown', (e) => {
-				console.log('in click', e)
 				const [ previousFeature ] = document.getElementsByClassName('selected-feature')
 				if (previousFeature) {
 					if (previousFeature.id === e.target.id) return

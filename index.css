@@ -323,11 +323,37 @@ iframe {
 	width: 100%;
 }
 
+#video__section-link {
+	bottom: 2em;
+}
+
 @keyframes grow {
 	50% {
 		transform: scale(2)
 	}
 	100% {
 		transform: scale(1);
+	}
+}
+
+#hamburger {
+	display: none;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	#navigation-wrapper {
+		display: none;
+	}
+
+	#logo-container {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000000;
+		background: white;
 	}
 }

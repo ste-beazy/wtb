@@ -77,12 +77,16 @@
 		if (running) return
 		running = true
 		document.addEventListener('click', (e) => {
+			if (e.target.id === 'logo') return 
+			console.log({ target: e.target })
 			const { style } = defaultDisplay
 			const [ featuredVideo ] = document.getElementsByClassName('featured-video')
-			if (style.display !== 'none') { style.display = 'none' }
+			if (style.display !== 'none') {
+				style.display = 'none'
+			}
 			const hasClassName = e.target.classList.value.indexOf('featured-video') >= 0
 			if (hasClassName) return
-			console.log({ featuredVideo })
+
 			if (featuredVideo) {
 				featuredVideo.classList.remove('featured-video')
 			}
@@ -96,7 +100,6 @@
 			} else {
 				video = s2[episode - 1]
 			}
-			console.log({ video })
 			const frame = document.getElementById('billboard')
 			iframe.src = video.src
 			text.innerHTML = season.toUpperCase() + ' Ep. ' + episode + ': ' + video.title
