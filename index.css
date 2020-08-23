@@ -3,7 +3,6 @@
 }
 
 body {
-	height: 100vh;
 	overflow-x: hidden;
 	background: white;
 	display: flex;
@@ -13,6 +12,7 @@ body {
 
 #root {
 	position: relative;
+	height: 100vh;
 }
 
 nav {
@@ -126,7 +126,6 @@ a div {
 	position: absolute;
 	bottom: 35px;
 	right: 0;
-
 }
 
 #features-preview__container {
@@ -247,6 +246,11 @@ main {
 	font-family: 'Lobster', cursive;
 	font-size: 3em;
 	animation: moveleft 2.5s infinite;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: black;
+	z-index: 10;
 }
 
 @keyframes moveleft {
@@ -309,14 +313,6 @@ main {
 	right: 10em;
 }
 
-.section-link {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	color: black;
-	z-index: 1;
-}
-
 .animation-grow {
 	animation: grow 3.5s linear infinite;
 }
@@ -358,5 +354,111 @@ iframe {
 		width: 100%;
 		z-index: 10000000;
 		background: white;
+	}
+}
+
+@media (max-device-width: 600px) {
+	body {
+		overflow: unset;
+	}
+
+	#root {
+		position: relative;
+    display: flex;
+    flex-direction: column;
+		align-items: center;
+		flex: 1;
+	}
+
+	#logo-container {
+		top: 0;
+	}
+
+	#about-preview__container,
+	#features-preview__container,
+	#video-container {
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.sticky {
+		position: unset;
+	}
+
+	#features-preview__container {
+		order: 2;
+		height: 45em;
+		border-bottom: 1px solid black;
+	}
+
+	#about-preview__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: unset;
+		order: 3;
+		border: unset;
+		margin-bottom: 4em;
+	}
+
+	#about__feature,
+	#about__background {
+		display: none;
+	}
+
+	#about-preview {
+		width: unset;
+		height: 25em;
+		margin: unset;
+		border-radius: unset;
+		justify-content: center;
+		align-items: flex-end;
+		background: white;
+	}
+
+	#about-blurb__wrapper {
+		width: 100%;
+		color: black;
+		background: rgb(255,240,179);
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 3em 1em;
+	}
+
+	#about-blurb__wrapper p {
+		padding: 1em;
+    background: white;
+    font-size: 1.5em;
+	}
+
+	.section-link {
+		background: rgb(255,240,179);
+		animation: unset;
+		position: unset;
+		width: unset;
+	}
+	
+	#features-preview {
+		height: 40%;
+		position: static;
+		margin: unset;
+		top: unset;
+	}
+
+	#dot-wrapper {
+		display: none;
+	}
+
+	#video-wrapper {
+		margin: 7.5em 0 0 0;
+		height: 15em;
+		width: 100%;
+	}
+
+	#video-container {
+		border-bottom: 1px solid black;
+		width: 100%;
+		padding-bottom: 4em;
 	}
 }
