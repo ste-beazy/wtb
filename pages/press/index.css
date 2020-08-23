@@ -1,0 +1,32 @@
+#press__billboard {
+	height: 35em;
+	background: url('../../assets/IMG_1847.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#press_billboard-logo {
+	height: 100%;
+	width: 100%;
+}
+
+.press-logo__dayton-biz {
+	background: url('../../assets/logo/dbj.png');
+}
+
+.press-logo__elevate-dayton {
+	background: url('../../assets/logo/download.png');
+}
+
+.press-logo__kultheredmedia {
+	background: url('../../assets/logo/kultaheredmedia.png');
+}
+
+.press-logo {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 10em;
+	width: 20em;
+}

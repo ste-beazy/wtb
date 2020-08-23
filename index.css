@@ -37,9 +37,10 @@ a div {
 	width: 55px;
 }
 
-a:hover {
+.navigation-link:hover {
 	background: rgba(255,255,255,.85);
 	text-decoration: none;
+	color: black;
 }
 
 #nav-left,
@@ -192,8 +193,8 @@ div.selected-feature {
 	transition: flex-grow .5s ease;
 }
 
-div.feature:hover p,
-div.feature:hover div {
+.special-feature p,
+.special-feature div {
 	visibility: visible;
 }
 
