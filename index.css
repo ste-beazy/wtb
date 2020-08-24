@@ -254,7 +254,7 @@ main {
 
 @keyframes moveleft {
 	50% {
-		margin-right: 2em;
+		margin-right: 1.5em;
 	}
 	100% {
 		margin-right: 0;
@@ -376,18 +376,13 @@ iframe {
     display: flex;
     flex-direction: column;
 		align-items: center;
+		justify-content: flex-start;
+		padding-top: 8em;
+		height: unset;
 	}
 
 	#logo-container {
 		top: 0;
-	}
-
-	#about-preview__container,
-	#features-preview__container,
-	#video-container {
-		flex-direction: column;
-		flex: 1;
-		flex-basis: 0;
 	}
 
 	.sticky {
@@ -396,11 +391,21 @@ iframe {
 
 	#features-preview__container {
 		order: 2;
-		height: 45em;
 		border-bottom: 1px solid black;
+		height: unset;
+		padding: 5em 0;
+	}
+
+	#features-preview {
+		position: static;
+		width: 100%;
+		margin: unset;
+		top: unset;
+		height: 24em;
 	}
 
 	#about-preview__container {
+		height: 20em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -408,21 +413,23 @@ iframe {
 		order: 3;
 		border: unset;
 		margin-bottom: 4em;
+		padding: 5em 0 ;
 	}
 
 	#about__feature,
-	#about__background {
+	#about__background,
+	#dot-wrapper {
 		display: none;
 	}
 
 	#about-preview {
 		width: unset;
-		height: 25em;
+		height: 100%;
 		margin: unset;
 		border-radius: unset;
 		justify-content: center;
-		align-items: flex-end;
-		background: white;
+		align-items: center;
+		background: black;
 	}
 
 	#about-blurb__wrapper {
@@ -432,32 +439,25 @@ iframe {
 		display: flex;
 		justify-content: center;
 		align-content: center;
-		padding: 3em 1em;
 	}
+
 
 	#about-blurb__wrapper p {
 		padding: 1em;
     background: white;
-    font-size: 1.5em;
+    font-size: 16px;
 	}
 
-	.section-link {
+	.section-link,
+	#video__section-link {
 		background: rgb(255,240,179);
-	}
-	
-	#features-preview {
-		height: 40%;
-		position: static;
-		margin: unset;
-		top: unset;
-	}
-
-	#dot-wrapper {
-		display: none;
+		bottom: -1em;
+		font-size: 2.5em;
 	}
 
 	#video-wrapper {
 		width: 100%;
+		height: 100%;
 		display: initial;
 		margin: 0;
 		top: unset;
@@ -474,10 +474,6 @@ iframe {
 		border-bottom: 1px solid black;
 		width: 100%;
 		padding-bottom: 4em;
-		margin-top: 12em;
-	}
-
-	#video__section-link {
-		bottom: -1em;
+		height: unset;
 	}
 }
