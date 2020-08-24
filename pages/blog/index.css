@@ -15,6 +15,7 @@ body {
 	padding: 2em;
 	display: flex;
 	align-items: center;
+	box-shadow: 0px 0px 55px 15px rgb(246, 217, 139);
 }
 
 #blog__message {
