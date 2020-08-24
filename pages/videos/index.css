@@ -61,9 +61,14 @@
 	border-radius: 50%;
 }
 
+#featured-video__title,
 .videos__season-header {
 	font-family: flood-std, sans serif;
 	font-size: 1.5em;
+}
+
+#featured-video__title {
+	padding: 1em;
 }
 
 .featured-video {
