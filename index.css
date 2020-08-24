@@ -44,6 +44,11 @@ a div {
 	font-weight: bolder;
 }
 
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
 .navigation-link:hover {
 	background: rgba(255,255,255,.85);
 	text-decoration: none;
