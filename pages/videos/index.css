@@ -39,14 +39,8 @@
 	align-items: center;
 }
 
-#videos__season-2 {
-	background: hotpink;
-}
-
-#videos__season-1 {
-	background: turquoise;
-	padding: 1em;
-	width: 90%;
+.video__season {
+	background: rgb(246, 217, 139);
 }
 
 .video__preview {
