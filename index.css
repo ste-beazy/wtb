@@ -252,14 +252,14 @@ main {
 	z-index: 10;
 }
 
-@keyframes moveleft {
+/* @keyframes moveleft {
 	50% {
 		margin-right: 1.5em;
 	}
 	100% {
 		margin-right: 0;
 	}
-}
+} */
 
 .sticky {
 	position: sticky;
@@ -435,10 +435,11 @@ iframe {
 	#about-blurb__wrapper {
 		width: 100%;
 		color: black;
-		background: rgb(255,240,179);
 		display: flex;
 		justify-content: center;
 		align-content: center;
+		background: rgb(246, 217, 139);
+		padding: 4em;
 	}
 
 
