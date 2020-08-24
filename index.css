@@ -63,7 +63,8 @@ p {
 	justify-content: space-evenly;
 }
 
-.navigation-link {
+.navigation-link,
+.section-link {
 	font-family: flood-std, sans-serif;
 }
 
@@ -242,7 +243,6 @@ main {
 }
 
 .section-link {
-	font-family: 'Lobster', cursive;
 	font-size: 3em;
 	animation: moveleft 2.5s infinite;
 	position: absolute;
@@ -376,7 +376,6 @@ iframe {
     display: flex;
     flex-direction: column;
 		align-items: center;
-		flex: 1;
 	}
 
 	#logo-container {
@@ -388,6 +387,7 @@ iframe {
 	#video-container {
 		flex-direction: column;
 		flex: 1;
+		flex-basis: 0;
 	}
 
 	.sticky {
@@ -443,9 +443,6 @@ iframe {
 
 	.section-link {
 		background: rgb(255,240,179);
-		animation: unset;
-		position: unset;
-		width: unset;
 	}
 	
 	#features-preview {
@@ -460,8 +457,16 @@ iframe {
 	}
 
 	#video-wrapper {
-		margin: 7.5em 0 0 0;
-		height: 15em;
+		width: 100%;
+		display: initial;
+		margin: 0;
+		top: unset;
+	}
+
+	#video-wrapper iframe {
+		max-height: 300px;
+		max-width: 600px;
+		height: 100vh;
 		width: 100%;
 	}
 
@@ -469,5 +474,10 @@ iframe {
 		border-bottom: 1px solid black;
 		width: 100%;
 		padding-bottom: 4em;
+		margin-top: 12em;
+	}
+
+	#video__section-link {
+		bottom: -1em;
 	}
 }
