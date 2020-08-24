@@ -39,20 +39,6 @@ body {
 	align-items: center;
 }
 
-#socials {
-	flex: 1;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background: rgb(255,240,179);
-}
-
-.social__image {
-	height: 2.5em;
-	width: 2.5em;
-	filter: grayscale();
-}
-
 @media (max-width: 600px) {
 	#contact-blurb,
 	#contact-blurb a {
