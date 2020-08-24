@@ -128,7 +128,6 @@ p {
 	background: url('./assets/juanita.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
-	transform: rotate(-90deg);
 	position: absolute;
 	bottom: 35px;
 	right: 0;
