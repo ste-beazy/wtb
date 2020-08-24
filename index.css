@@ -348,7 +348,17 @@ iframe {
 	display: none;
 }
 
+#logoLink {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
 @media (max-width: 900px) {
+	#logoLink {
+		display: none;
+	}
+
 	.navigation-wrapper {
 		display: none;
 	}
