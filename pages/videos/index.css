@@ -46,12 +46,24 @@
 .video__preview {
 	flex: 1;
 	height: 100%;
-	border: 1px solid black;
-	background: lightgreen;
+	border: 1px solid rgb(246, 217, 139);
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.video__preview span {
+.video__preview::after {
+	content: " " attr(key) " ";
 	font-size: 1.25em;
+	padding: 0 .5em;
+	background: white;
+	border-radius: 50%;
+}
+
+.videos__season-header {
+	font-family: flood-std, sans serif;
+	font-size: 1.5em;
 }
 
 .featured-video {
