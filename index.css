@@ -58,7 +58,7 @@ a div {
 }
 
 .navigation-link {
-	font-family: 'Lobster', cursive;
+	font-family: flood-std, sans-serif;
 }
 
 #logo-container {
@@ -357,7 +357,7 @@ iframe {
 	}
 }
 
-@media (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
 	body {
 		overflow: unset;
 	}
