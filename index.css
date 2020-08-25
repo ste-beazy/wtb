@@ -166,11 +166,11 @@ p {
 }
 
 .carousel__move-in {
-	animation: carouselMoveIn .3s forwards;
+	animation: carouselMoveIn .5s forwards;
 }
 
 .carousel__move-out {
-	animation: carouselMoveOut .3s forwards;
+	animation: carouselMoveOut .5s forwards;
 }
 
 @keyframes carouselMoveIn {
@@ -450,6 +450,7 @@ footer {
 		border-bottom: 1px solid black;
 		height: unset;
 		padding: 5em 0;
+		width: 100%;
 	}
 
 	#features-preview {
