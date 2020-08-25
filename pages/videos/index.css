@@ -47,7 +47,7 @@
 	flex: 1;
 	height: 100%;
 	border: 1px solid rgb(246, 217, 139);
-	background: black;
+	background: rgba(0,0,0,.75);
 	display: flex;
 	justify-content: center;
 	align-items: center;
