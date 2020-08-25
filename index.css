@@ -495,6 +495,8 @@ footer {
 		align-content: center;
 		background: rgb(246, 217, 139);
 		padding: 4em;
+		font-size: 1em;
+		margin: unset;
 	}
 
 
