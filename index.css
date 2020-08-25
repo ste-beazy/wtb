@@ -46,7 +46,7 @@ a div {
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Alata', sans-serif;
 	font-weight: 400;
 }
 
@@ -91,7 +91,7 @@ p {
 }
 
 #video-container {
-	height: 85em;
+	height: 55em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -113,7 +113,9 @@ p {
 }
 
 #about-blurb__wrapper {
-	width: 50%;
+	width: 45%;
+	font-size: 1.25em;
+	margin-right: 1em;
 }
 
 #about__background {
@@ -141,7 +143,6 @@ p {
 	height: 105em;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	border-bottom: 3px solid black;
 }
 
@@ -149,20 +150,44 @@ p {
 	height: 35em;
 	background: rgba(0,0,0, .88);
 	width: 75%;
-	margin-bottom: 15%;
+	margin: 15% 0;
 	top: 75px;
-	display: flex;
 	z-index: 1;
 }
 
 .feature {
 	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
+	position: absolute;
+	left: 100%;
+	top: 0;
 }
+
+.carousel__move-in {
+	animation: carouselMoveIn .3s forwards;
+}
+
+.carousel__move-out {
+	animation: carouselMoveOut .3s forwards;
+}
+
+@keyframes carouselMoveIn {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes carouselMoveOut {
+	from {
+		left: 0;
+	}
+	to {
+		left: -100%;
+	}
+}
+
 
 #home-feature__one {
 	background: url('./assets/tr3umphant-designs.JPG');
@@ -425,10 +450,11 @@ footer {
 	}
 
 	#features-preview {
-		position: static;
+		position: relative;
 		width: 100%;
 		margin: unset;
-		top: unset;
+		top: 0;
+		left: 0;
 		height: 24em;
 	}
 

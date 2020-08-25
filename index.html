@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/opc7lct.css">
 	<link rel="stylesheet" href="./index.css">
 	<title>What's the Biz - Home</title>
@@ -76,25 +76,15 @@
 		</section>
 		<section id='features-preview__container'>
 			<div id='features-preview' class='sticky'>
-				<div id='home-feature__one' class='feature'>
-					<div>I could be a picture of a feature</div>
-					<p>I'm hidden content</p>
+				<div id='home-feature__one' class='feature carousel__movie-in'>
 				</div>
 				<div id='home-feature__two' class='feature'>
-					<div>I could be a picture of a feature</div>
-					<p>I'm hidden content</p>
 				</div>
 				<div id='home-feature__three' class='feature'>
-					<div>I could be a picture of a feature</div>
-					<p>I'm hidden content</p>
 				</div>
 				<div id='home-feature__four' class='feature'>
-					<div>I could be a picture of a feature</div>
-					<p>I'm hidden content</p>
 				</div>
 				<div id='home-feature__five' class='feature'>
-					<div>I could be a picture of a feature</div>
-					<p>I'm hidden content</p>
 				</div>
 			</div>
 			<a class='section-link' href='./pages/contact/index.html'>
@@ -139,6 +129,25 @@
 				feature.classList.add('selected-feature')
 			})
 		}
+		// let currentFeature = 0
+		// const startCarousel = () => {
+		// 	setTimeout(() => {
+		// 		if (currentFeature) {
+		// 			features[currentFeature - 1].classList.remove('carousel__move-out')
+		// 			features[currentFeature].classList.remove('carousel__move-in')
+		// 		}
+		// 		console.log({ currentFeature })
+		// 		features[currentFeature].classList += ' carousel__move-out'
+		// 		let index = currentFeature ? currentFeature + 1 : 0
+		// 		features[index].classList += ' carousel__move-in'
+		// 		currentFeature = index ? index : 1
+		// 		if (index >= features.length) {
+		// 			currentFeature = 0
+		// 		}
+		// 	}, 2500)
+		// 	return startCarousel()
+		// }
+		// startCarousel()
 	</script>
 </body>
 </html>
