@@ -76,7 +76,7 @@
 		</section>
 		<section id='features-preview__container'>
 			<div id='features-preview' class='sticky'>
-				<div id='home-feature__one' class='feature carousel__movie-in'>
+				<div id='home-feature__one' class='feature'>
 				</div>
 				<div id='home-feature__two' class='feature'>
 				</div>
@@ -129,25 +129,23 @@
 				feature.classList.add('selected-feature')
 			})
 		}
-		// let currentFeature = 0
-		// const startCarousel = () => {
-		// 	setTimeout(() => {
-		// 		if (currentFeature) {
-		// 			features[currentFeature - 1].classList.remove('carousel__move-out')
-		// 			features[currentFeature].classList.remove('carousel__move-in')
-		// 		}
-		// 		console.log({ currentFeature })
-		// 		features[currentFeature].classList += ' carousel__move-out'
-		// 		let index = currentFeature ? currentFeature + 1 : 0
-		// 		features[index].classList += ' carousel__move-in'
-		// 		currentFeature = index ? index : 1
-		// 		if (index >= features.length) {
-		// 			currentFeature = 0
-		// 		}
-		// 	}, 2500)
-		// 	return startCarousel()
-		// }
-		// startCarousel()
+		let currentFeature = 0
+		const startCarousel = () => {
+			let prevFeature = currentFeature - 1
+			if (currentFeature) {
+				features[prevFeature].classList += '  carousel__move-out'
+				features[currentFeature].classList += ' carousel__move-in'
+				features[prevFeature].classList.remove('carousel__move-out')
+				features[prevFeature].classList.remove('carousel__move-in')
+				let nextFeature = currentFeature && (currentFeature + 1 < features.length) ? currentFeature + 1 : 0
+				currentFeature = nextFeature
+			} else {
+				features[currentFeature].classList += (' carousel__move-in')
+				features[features.length - 1].classList.remove('carousel__move-in')
+				currentFeature += 1
+			}
+		}
+		setInterval(startCarousel, 4500)
 	</script>
 </body>
 </html>
