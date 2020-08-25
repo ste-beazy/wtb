@@ -15,7 +15,7 @@
 }
 
 #billboard {
-	height: 25em;
+	height: 38em;
 	display: flex;
 	flex-direction: column-reverse;
 	position: relative;
@@ -32,7 +32,7 @@
 
 #video__seasons {
 	width: 80%;
-	height: 35em;
+	height: 36em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -76,10 +76,13 @@
 }
 
 @media (max-width: 900px) {
-	#videos-page__container {
-		padding-top: 8em;
+	#billboard {
+		position: fixed;
+		top: 7em;
+		height: 32em;
+		z-index: 100;
 	}
-	
+
 	.video__season {
 		flex-direction: column;
 		flex: 1;
@@ -88,5 +91,6 @@
 
 	#video__seasons {
 		height: 55em;
+		margin-top: 38em;
 	}
 }
