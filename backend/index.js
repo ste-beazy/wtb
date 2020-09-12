@@ -1,6 +1,7 @@
 const express = require('express')
 const { urlencoded, json, Router } = require('express')
 const { createTransport } = require('nodemailer')
+const path = require('path')
 
 const postOffice = createTransport({
 	service: 'Gmail'
@@ -9,6 +10,7 @@ const postOffice = createTransport({
 const app = express()
 app.use(json())
 app.use(urlencoded({ extended: true }))
+app.set('views', path.join(__dirname, 'frontend/'));
 
 const asyncHandler = (req, res, next, err) => new Promise((resolve, reject) => {
 	resolve(req, res)
@@ -19,6 +21,10 @@ const asyncHandler = (req, res, next, err) => new Promise((resolve, reject) => {
 
 const router = Router({
 	strict: true
+})
+
+router.get('/', (req, res) => {
+	res.render('index.html')
 })
 
 router.post('/subscribe', asyncHandler, async (req, res) => {
