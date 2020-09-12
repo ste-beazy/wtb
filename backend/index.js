@@ -10,7 +10,7 @@ const postOffice = createTransport({
 const app = express()
 app.use(json())
 app.use(urlencoded({ extended: true }))
-app.set('views', path.join(__dirname, 'frontend/'));
+app.use('/static', express.static(path.join(__dirname, 'frontend')))
 
 const asyncHandler = (req, res, next, err) => new Promise((resolve, reject) => {
 	resolve(req, res)
@@ -24,7 +24,7 @@ const router = Router({
 })
 
 router.get('/', (req, res) => {
-	res.render('index.html')
+	res.sendFile(path.join(__dirname, '/frontend/index.html'))
 })
 
 router.post('/subscribe', asyncHandler, async (req, res) => {
