@@ -104,6 +104,8 @@
 			const [season, episode] = completeId.split('-')
 			const video = all_seasons[season][episode - 1]
 			const frame = document.getElementById('billboard')
+			const previousFrame = document.getElementById('featured-video__default')
+			previousFrame.src = undefined
 			iframe.src = video.src
 			text.innerHTML = season.toUpperCase() + ' Ep. ' + episode + ': ' + video.title
 			frame.appendChild(iframe)
