@@ -95,13 +95,6 @@
 	}
 
 	#video__seasons {
-		height: 55em;
-		margin-top: 120%;
-	}
-}
-
-@media (max-width: 600px) {
-	#video__seasons {
-		margin-top: 200%;
+		margin-top: 95%;
 	}
 }
