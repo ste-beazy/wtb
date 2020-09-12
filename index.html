@@ -117,19 +117,8 @@
 	</main>
 	<script src='./index.js'></script>
 	<script>
-		const features = document.getElementsByClassName('feature')
-		for (let i = 0; i < features.length; i++) {
-			const feature = features[i]
-			feature.addEventListener('mousedown', (e) => {
-				const [ previousFeature ] = document.getElementsByClassName('selected-feature')
-				if (previousFeature) {
-					if (previousFeature.id === e.target.id) return
-					previousFeature.classList.remove('selected-feature')
-				}
-				feature.classList.add('selected-feature')
-			})
-		}
 		let currentFeature = 0
+		const features = document.getElementsByClassName('feature')
 		const startCarousel = () => {
 			let prevFeature = currentFeature - 1
 			if (currentFeature) {
@@ -145,7 +134,19 @@
 				currentFeature += 1
 			}
 		}
-		setInterval(startCarousel, 4500)
+		const start = () => setInterval(startCarousel, 4500)
+		let id = start()
+		let clicked = false
+		const target = document.getElementById('features-preview')
+		target.addEventListener('click', () => {
+			if (clicked) {
+				id = start()
+				clicked = false
+				return
+			}
+			clicked = true
+			clearInterval(id)
+		})
 	</script>
 </body>
 </html>
