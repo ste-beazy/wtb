@@ -275,7 +275,7 @@ main {
 
 .section-link {
 	font-size: 3em;
-	animation: moveleft 2.5s 7 forwards;
+	animation: moveleft 2.5s infinite forwards;
 	position: absolute;
 	bottom: 0;
 	right: 0;
