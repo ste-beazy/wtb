@@ -76,7 +76,7 @@
 		</section>
 		<section id='features-preview__container'>
 			<div id='features-preview' class='sticky'>
-				<div id='home-feature__one' class='feature'>
+				<div id='home-feature__one' class='feature carousel__move-in'>
 				</div>
 				<div id='home-feature__two' class='feature'>
 				</div>
@@ -123,13 +123,17 @@
 			let prevFeature = currentFeature - 1
 			if (currentFeature) {
 				features[prevFeature].classList += '  carousel__move-out'
-				features[currentFeature].classList += ' carousel__move-in'
-				features[prevFeature].classList.remove('carousel__move-out')
 				features[prevFeature].classList.remove('carousel__move-in')
+				features[currentFeature].classList += ' carousel__move-in'
 				let nextFeature = currentFeature && (currentFeature + 1 < features.length) ? currentFeature + 1 : 0
 				currentFeature = nextFeature
+				const id = setInterval(() => {
+					features[prevFeature].classList.remove('carousel__move-out')
+					clearInterval(id)
+				}, 500)
 			} else {
-				features[currentFeature].classList += (' carousel__move-in')
+				features[currentFeature].classList.remove('carousel__move-out')
+				features[currentFeature].classList += ' carousel__move-in'
 				features[features.length - 1].classList.remove('carousel__move-in')
 				currentFeature += 1
 			}
