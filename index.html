@@ -86,6 +86,7 @@
 				</div>
 				<div id='home-feature__five' class='feature'>
 				</div>
+				<div id='home-feature__right-arrow'>></div>
 			</div>
 			<a class='section-link' href='./pages/contact/index.html'>
 				<span>Features ></span>
@@ -150,6 +151,12 @@
 			}
 			clicked = true
 			clearInterval(id)
+		})
+		const arrow = document.getElementById('home-feature__right-arrow')
+		arrow.addEventListener('click', () => {
+			clearInterval(id)
+			currentFeature = currentFeature++
+			startCarousel()
 		})
 	</script>
 </body>

@@ -173,6 +173,19 @@ p {
 	animation: carouselMoveOut .5s forwards;
 }
 
+#home-feature__right-arrow {
+	position: absolute;
+	height: 100%;
+	width: 4em;
+	font-size: 1.5em;
+	border-radius: 15px;
+	right: -.75em;
+	background: lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @keyframes carouselMoveIn {
 	from {
 		left: 100%;
@@ -354,15 +367,6 @@ iframe {
 
 #video__section-link {
 	bottom: 2em;
-}
-
-@keyframes grow {
-	50% {
-		transform: scale(2)
-	}
-	100% {
-		transform: scale(1);
-	}
 }
 
 #hamburger {

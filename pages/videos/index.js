@@ -69,6 +69,14 @@
 			{
 				src: 'https://www.youtube.com/embed/oVrt309tWC8',
 				title: 'Meltz - Cerenity'
+			},
+			{
+				src: 'https://www.youtube.com/embed/b3ef7x3KexQ',
+				title: 'Royalty Realty Investments'
+			},
+			{
+				src: 'https://www.youtube.com/embed/-kX7RW4rvxk',
+				title: 'Jazzi Delights - Jasmine Brown'
 			}
 		]
 	}
@@ -103,6 +111,7 @@
 			const completeId = e.target.id
 			const [season, episode] = completeId.split('-')
 			const video = all_seasons[season][episode - 1]
+			console.log({ video })
 			const frame = document.getElementById('billboard')
 			const previousFrame = document.getElementById('featured-video__default')
 			previousFrame.src = undefined
