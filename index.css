@@ -206,33 +206,31 @@ p {
 
 
 #home-feature__one {
-	background: url('./assets/tr3umphant-designs.JPG');
+	background: url('./assets/t-1.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 #home-feature__two {
-	background: url('./assets/bee.jpg');
+	background: url('./assets/t-2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 #home-feature__three {
-	background: url('./assets/ashley.png');
+	background: url('./assets/t-3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 #home-feature__four {
-	background: url('./assets/juanita.jpg');
+	background: url('./assets/t-4.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#home-feature__five {
-	background: url('./assets/tayo.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: center;
 }
 
 .feature p,
@@ -273,12 +271,14 @@ div.selected-feature {
 	background: rgba(255, 240, 179);
 	width: 15em;
 	height: 100%;
+	opacity: .85;
 }
 
 .black {
 	background: black;
 	width: 35em;
 	height: 100%;
+	opacity: .85;
 }
 
 section,
