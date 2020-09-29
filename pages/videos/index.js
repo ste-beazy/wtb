@@ -77,6 +77,10 @@
 			{
 				src: 'https://www.youtube.com/embed/-kX7RW4rvxk',
 				title: 'Jazzi Delights - Jasmine Brown'
+			},
+			{
+				src: 'https://www.youtube.com/embed/w3p1eNKfKX4',
+				title: 'Simply Savory by Rachel - Rachel Blanks'
 			}
 		]
 	}
@@ -84,7 +88,6 @@
 	const allVideos = document.getElementsByClassName('video__preview')
 	const iframe = document.createElement('iframe')
 	iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-	iframe.frameBorder = '0'
 	iframe.allowFullscreen = true
 	const text = document.getElementById('featured-video__title')
 	const defaultDisplay = document.getElementById('featured-video__default')
@@ -93,7 +96,13 @@
 		if (running) return
 		running = true
 		document.addEventListener('click', (e) => {
+			e.stopPropagation()
 			if (e.target.classList.value.indexOf('video__preview') < 0) return
+
+			const completeId = e.target.id
+			const [season, episode] = completeId.split('-')
+			const video = all_seasons[season][episode - 1]
+			if (!video.src) return
 
 			const { style } = defaultDisplay
 			const [ featuredVideo ] = document.getElementsByClassName('featured-video')
@@ -108,10 +117,6 @@
 			}
 
 			e.target.classList += ' featured-video'
-			const completeId = e.target.id
-			const [season, episode] = completeId.split('-')
-			const video = all_seasons[season][episode - 1]
-			console.log({ video })
 			const frame = document.getElementById('billboard')
 			const previousFrame = document.getElementById('featured-video__default')
 			previousFrame.src = undefined
