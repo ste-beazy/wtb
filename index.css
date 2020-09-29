@@ -206,28 +206,42 @@ p {
 
 
 #home-feature__one {
-	background: url('./assets/t-1.jpeg');
+	background: url('./assets/t-0.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #home-feature__two {
-	background: url('./assets/t-2.jpg');
+	background: url('./assets/t-1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #home-feature__three {
-	background: url('./assets/t-3.jpg');
+	background: url('./assets/t-2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #home-feature__four {
+	background: url('./assets/t-3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#home-feature__five {
 	background: url('./assets/t-4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center left;
+}
+
+#home-feature__six {
+	background: url('./assets/t-5.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
