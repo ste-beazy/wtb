@@ -98,24 +98,23 @@ p {
 }
 
 #about-preview {
-	height: 45em;
+	height: 17em;
 	background: rgb(255,240,179);
-	top: 10em;
-	width: 55em;
+	top: 15em;
+	width: 31em;
 	z-index: 1;
-	margin-bottom: 10%;
-	border-radius: 50%;
-	margin-left: -27rem;
 	color: black;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
+	left: 2em;
+	margin-bottom: 10em;
 }
 
 #about-blurb__wrapper {
-	width: 45%;
 	font-size: 1.25em;
 	margin-right: 1em;
+	width: 70%;
 }
 
 #about__background {
@@ -213,7 +212,7 @@ p {
 }
 
 #home-feature__two {
-	background: url('./assets/t-1.jpeg');
+	background: url('./assets/t-1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -242,6 +241,13 @@ p {
 
 #home-feature__six {
 	background: url('./assets/t-5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#home-feature__sev {
+	background: url('./assets/t-6.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
