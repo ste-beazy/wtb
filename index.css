@@ -97,6 +97,15 @@ p {
 	align-items: center;
 }
 
+#about__billboard {
+	background: url('./assets/t-4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	width: 100%;
+	height: 40em;
+}
+
 #about-preview {
 	height: 17em;
 	background: rgb(255,240,179);
@@ -108,7 +117,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	left: 2em;
-	margin-bottom: 10em;
+	margin: 10em 0;
 }
 
 #about-blurb__wrapper {
@@ -125,6 +134,7 @@ p {
 	top: 0;
 	display: flex;
 	right: 5em;
+	z-index: -1;
 }
 
 #about__feature {
@@ -176,7 +186,7 @@ p {
 	position: absolute;
 	height: 100%;
 	width: 4em;
-	font-size: 1.5em;
+	font-size: 1.65em;
 	border-radius: 15px;
 	right: -.75em;
 	background: lightgrey;
@@ -184,6 +194,15 @@ p {
 	justify-content: center;
 	align-items: center;
 }
+
+/* .feature__arrow:first-child {
+	font-size: 1em;
+}
+
+.feature__arrow {
+	position: relative;
+	animation: moveLeft .75s infinite forwards;
+} */
 
 @keyframes carouselMoveIn {
 	from {
