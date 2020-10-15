@@ -107,17 +107,18 @@ p {
 }
 
 #about-preview {
-	height: 17em;
+	height: 30em;
 	background: rgb(255,240,179);
 	top: 15em;
-	width: 31em;
+	width: 30em;
 	z-index: 1;
 	color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	left: 2em;
+	left: 31%;
 	margin: 10em 0;
+	border-radius: 50%;
 }
 
 #about-blurb__wrapper {
