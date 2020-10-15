@@ -81,6 +81,14 @@
 			{
 				src: 'https://www.youtube.com/embed/w3p1eNKfKX4',
 				title: 'Simply Savory by Rachel - Rachel Blanks'
+			},
+			{
+				src: 'https://www.youtube.com/embed/LcDbOaxSVGE',
+				title: 'Haus Essentials by Dolly Addison'
+			},
+			{
+				src: 'https://www.youtube.com/embed/ZpfoLp33t2o',
+				title: 'Daytonian Beard Company'
 			}
 		]
 	}
