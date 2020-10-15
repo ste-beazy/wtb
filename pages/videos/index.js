@@ -1,5 +1,11 @@
 (function () {
 	const all_seasons = {
+		exclusive: [
+			{
+				src: 'https://www.youtube.com/embed/PaOLJWFZmEY',
+				title: 'Black Excellence! Music Industry Mogul/Legend Jojo Brim'
+			}
+		],
 		s1: [
 			{
 				src: 'https://www.youtube.com/embed/ZbGC9Dw-j-I',
