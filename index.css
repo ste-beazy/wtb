@@ -107,22 +107,21 @@ p {
 }
 
 #about-preview {
-	height: 30em;
+	height: 45em;
 	background: rgb(255,240,179);
 	top: 15em;
-	width: 30em;
+	width: 45em;
 	z-index: 1;
 	color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	left: 31%;
-	margin: 10em 0;
+	margin: 10em auto;
 	border-radius: 50%;
 }
 
 #about-blurb__wrapper {
-	font-size: 1.25em;
+	font-size: 1.75em;
 	margin-right: 1em;
 	width: 70%;
 }
@@ -490,7 +489,7 @@ footer {
 	}
 
 	#features-preview__container {
-		order: 2;
+		order: 3;
 		border-bottom: 1px solid black;
 		height: unset;
 		padding: 5em 0;
@@ -517,10 +516,9 @@ footer {
 		align-items: center;
 		justify-content: flex-start;
 		position: unset;
-		order: 3;
 		border: unset;
 		margin-bottom: 5em;
-		padding: 5em 0 0;
+		position: relative;
 	}
 
 	#about__feature,
@@ -565,7 +563,7 @@ footer {
 		font-size: 2.5em;
 	}
 
-	#about__section-link {
+	#feature__section-link {
 		bottom: 2em;
 	}
 
@@ -589,5 +587,6 @@ footer {
 		width: 100%;
 		padding-bottom: 4em;
 		height: unset;
+		order: 2;
 	}
 }
