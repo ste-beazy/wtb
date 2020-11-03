@@ -95,6 +95,18 @@
 			{
 				src: 'https://www.youtube.com/embed/ZpfoLp33t2o',
 				title: 'Daytonian Beard Company'
+			},
+			{
+				src: 'https://www.youtube.com/embed/HqmBc-b0QJg',
+				title: 'Picture Perfect Paint Parties'
+			},
+			{
+				src: 'https://www.youtube.com/embed/zPa5KO3Rvh4',
+				title: 'GigMerge'
+			},
+			{
+				src: 'https://www.youtube.com/embed/paru3uNA45s',
+				title: 'Klubhouse Brand'
 			}
 		]
 	}
