@@ -121,9 +121,13 @@ p {
 }
 
 #about-blurb__wrapper {
-	font-size: 1.75em;
+	font-size: 1.25em;
 	margin-right: 1em;
 	width: 70%;
+}
+
+#about-blurb__wrapper p {
+	margin: 2.5em 0;
 }
 
 #about__background {
@@ -541,10 +545,10 @@ footer {
 		width: 100%;
 		color: black;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-content: center;
 		background: rgb(246, 217, 139);
-		padding: 4em;
 		font-size: 1em;
 		margin: unset;
 	}
@@ -553,7 +557,8 @@ footer {
 	#about-blurb__wrapper p {
 		padding: 1em;
     background: white;
-    font-size: 16px;
+		font-size: 18px;
+		width: 100%;
 	}
 
 	.section-link,
