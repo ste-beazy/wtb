@@ -40,26 +40,31 @@ body {
 }
 
 @media (max-width: 600px) {
-	#contact-blurb,
-	#contact-blurb a {
-		font-size: 1.5em;
-	}
 }
 
 @media screen and (max-width: 400px) {
 	#contact-blurb {
-		height: 35%;
+		height: 25%;
 		justify-content: center;
 		border-radius: 13px 13px;
+		align-items: center;
+	}
+
+	#contact-blurb p {
+		text-align: center;
 	}
 
 	#contact-blurb,
 	#contact-blurb a {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 
 	#contact-blurb a {
 		color: blue;
 		text-decoration: underline;
+	}
+
+	footer {
+		display: none;
 	}
 }
