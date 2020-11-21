@@ -509,7 +509,8 @@ footer {
 	}
 
 	#about__billboard {
-		height: 25em;
+		height: 15em;
+		background-position: left;
 	}
 
 	#about-preview__container {
@@ -557,18 +558,13 @@ footer {
 		padding: 1em;
     background: white;
 		font-size: 18px;
-		width: 100%;
 	}
 
 	.section-link,
 	#video__section-link {
 		background: rgb(255,240,179);
 		bottom: -1em;
-		font-size: 2.5em;
-	}
-
-	#feature__section-link {
-		bottom: 2em;
+		font-size: 1.75em;
 	}
 
 	#video-wrapper {
@@ -584,6 +580,10 @@ footer {
 		max-width: 600px;
 		height: 100vh;
 		width: 100%;
+	}
+
+	#features-preview__container .section-link {
+		bottom: 2em;
 	}
 
 	#video-container {
