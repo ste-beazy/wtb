@@ -13,7 +13,6 @@ body {
 	width: 85%;
 	font-weight: bolder;
 	font-size: 1em;
-	text-align: justify;
 	padding: 16px;
 	margin: auto;
 }
@@ -75,7 +74,7 @@ body {
 	}
 	
 	.about-page__content {
-		width: 55%;
+		width: 66%;
 	}
 
 }
