@@ -77,11 +77,16 @@
 }
 
 @media (max-width: 900px) {
+	#videos-page__container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	#billboard {
-		position: fixed;
-		top: 7em;
-		height: 32em;
-		z-index: 100;
+		margin-top: 7em;
+		display: flex;
+		flex-direction: column;
+		height: 15em;
 	}
 
 	.video__season {
@@ -92,9 +97,6 @@
 	.video__preview {
 		flex: unset;
 		height: 5em;
-	}
-
-	#video__seasons {
-		margin-top: 80%;
+		width: 100%;
 	}
 }
