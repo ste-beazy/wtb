@@ -41,8 +41,8 @@ body {
 #mission_content-wrapper p {
 	background: rgb(255, 240, 179);
 	color: black;
-	font-size: 1.25em;
-	padding: 1em;
+	font-size: 1em;
+	padding: 1em 0;
 	text-align: justify;
 	font-weight: bolder;
 }
@@ -57,7 +57,7 @@ body {
 @media (max-width: 600px) {
 	#mission_content-wrapper {
 		width: 95%;
-		margin-top: 7em;
+		margin: 4em 0;
 	}
 
 	#mission-container #background {
